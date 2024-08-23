@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+
+    <div class="w-full bg-zinc-900 ">
+        <div class="parent relative w-full h-[1400vh] ">
+            <div class="w-full h-screen sticky top-0 left-0 overflow-x-hidden">
+                <canvas class="w-full h-screen" id="canvas"></canvas>
+                <div class="absolute animate1 z-[2] text-white bottom-10 w-1/2 left-10">
+                    <h1 class="leading-20 font-[100] text-3xl">
+                        &copy; 2024 DOZE STD
+                    </h1>
+                    <h1 class="text-3xl">
+                        SHAPING BRANDS -> CRAFTING MOTION
+                    </h1>
+                </div>
+                <div class="absolute animate2 flex z-[2] text-white bottom-10 w-1/2 right-10 text-right opacity-0">
+                    <h1 class="leading-20 font-[100] uppercase text-6xl">
+                        Transforming Visions
+                    </h1>
+                    <h1 class="text-xl w-1/2"> Building identity and inspiring action, Sculpting digital experience</h1>
+                </div>
+                <div class="absolute animate3 z-[2] text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center opacity-0">
+                    <h1 class="leading-20 font-[100] uppercase text-6xl">
+                        Elevating Aesthetics
+                    </h1>
+                    <h1 class="text-xl">Crafting solutions and exploring new horizons. Evolving narratives and elevating aesthetics in every project.</h1>
+                </div>
+                <div class="w-1/3 panel translate-x-full h-screen bg-white absolute right-0 top-0 z-[2] p-10">
+                    <h3 class="panelelem text-xl font-[100]">2024 DOZE.STD</h3>
+                    <p class="panelelem mt-10 text-xl">
+                        Sculpting Digital
+                        Transforming visions into Digital realities. Weaving stories that captivate and innovate.
+                        Exploring new possibilities with a focus on narratives evolution. Crafting solutions that engage and elevate.
+                    </p>
+                    <button class="panelelem border-[1px] px-3 py-2 border-[#555] font-[100] mt-6">Get Reviews -></button>
+
+                    <div class="panelelem absolute bottom-10">
+                        <h3 class="text-xl">
+                        Innovating Design</h3>
+                        <p class="text-sm mt-3">Connecting ideas to faster creativity. Designing impactful experiences 
+                        that
+                        resonate.
+                        Feel free to mix and match these sections to suit your wesite's design needs!</p>
+                        <button class="bg-black text-white px-7 text-sm mt-4 py-4 font-[100] capitalize">experience</button>
+                    </div>
+                </div>
+                <div class="absolute z-[2] panelism text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-6xl tracking-tighter opacity-0">
+                    &copy: Panelism <span class="line w-10 h-1 bg-white inline-block"></span> 2024
+                </div>
+            </div>
+            
+        </div>
+        <div class="w-full p-10 bg-white">
+            <h1 class="text-4xl tracking-tighter">&reg: Our Recent Projects</h1>
+            <div class="w-1/2  headings p-3 flex-col gap-10 mt-32">
+                <h3 class="text-6xl">Sachin Tendulkar</h3>
+                <h3 class="text-6xl">Virat Kohli</h3>
+                <h3 class="text-6xl">MS Dhoni</h3>
+                <h3 class="text-6xl">Kapil Dev</h3>
+                <h3 class="text-6xl">Sourav Ganguly</h3>
+                <h3 class="text-6xl">Rohit Sharma</h3>
+                <h3 class="text-6xl">Anil Kumble</h3>
+                <h3 class="text-6xl">Rahul Dravid</h3>
+                <h3 class="text-6xl">Sunil Gavaskar</h3>
+                <h3 class="text-6xl">Yuvraj Singh</h3>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/lenis@1.1.11/dist/lenis.min.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>
